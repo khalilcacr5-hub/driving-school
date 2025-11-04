@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-
 #include <QApplication>
 #include "connection.h"
 #include <QMessageBox>
@@ -7,18 +6,21 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
+
     Connection c;
     bool test = c.connect();
-    if (test ) {
+
+    if (test) {
+        QMessageBox::information(nullptr, QObject::tr("Base de donnees ouverte"),QObject::tr(" Vous etes connecte a  la base de donnees.\n""Cliquez sur OK pour continuer."), QMessageBox::Ok);
+
+        MainWindow w;
         w.show();
-        QMessageBox:: information(nullptr,QObject::tr("base de donnees ouverte"),
-                                 QObject::tr("felicitation vous etes connectes a la base de donne \n" "cliquer ok pour quitter") , QMessageBox::Ok);
-
+        return a.exec();
     }
-    else QMessageBox::critical(nullptr,QObject::tr("echec"),QObject::tr("echec de connexion a la base de donnees \n" "cliquer ok pour quitter"),QMessageBox::Cancel);
-
-
-
-    return a.exec();
+    else {
+        QMessageBox::critical(nullptr, QObject::tr("Echec"), QObject::tr("Echec de connexion a la base de donnees.\n""Cliquez sur OK pour quitter."),
+         QMessageBox::Cancel);
+        return -1;
+    }
 }
+

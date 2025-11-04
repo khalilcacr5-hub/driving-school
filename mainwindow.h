@@ -2,7 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <QSqlQuery>
+#include <QSqlError>
+#include <QMessageBox>
+#include <QTableWidget>
+#include <QTableWidgetItem>
+#include <QSqlDatabase>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -10,17 +15,16 @@ class MainWindow;
 }
 QT_END_NAMESPACE
 
-
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
-
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
+
     void on_candidat_5_clicked();
 
     void on_candidat_clicked();
@@ -87,7 +91,33 @@ private slots:
 
     void on_pushButton_Rechercher_clicked();
 
+
+
+    void chargerVehicules();
+
+    void on_pushButton_55_clicked();
+
+    void on_pushButton_56_clicked();
+
+    void on_pushButton_57_clicked();
+
+    void on_pushButton_58_clicked();
+
+    void on_pushButton_105_clicked();
+
+    void on_pushButton_Annuler_clicked();
+
+    void on_pushButton_53_clicked();
+
+    void on_tableWidget_Vehicule_cellClicked(int row, int column);
+
+
+
+    void on_calendarWidget_clicked(const QDate &date);
+    void marquerDatesCalendrier();
+
 private:
     Ui::MainWindow *ui;
 };
+
 #endif // MAINWINDOW_H

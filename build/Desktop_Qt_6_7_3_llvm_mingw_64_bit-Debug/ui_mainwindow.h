@@ -92,7 +92,6 @@ public:
     QFrame *supp_4;
     QPushButton *pushButton_20;
     QLineEdit *lineEdit_15;
-    QLabel *label_50;
     QFrame *menu1;
     QPushButton *candidat;
     QPushButton *vehicule;
@@ -101,6 +100,7 @@ public:
     QPushButton *examen;
     QFrame *utilisateur_2;
     QPushButton *pushButton_55;
+    QLabel *label_22;
     QWidget *tab1;
     QGroupBox *groupBox_2;
     QLabel *label_17;
@@ -120,9 +120,6 @@ public:
     QRadioButton *radioButton_TousRisque;
     QRadioButton *radioButton_Intermediaire;
     QRadioButton *radioButton_ResponsabiliteCivile;
-    QPushButton *pushButton_Ajouter;
-    QPushButton *pushButton_Modifier;
-    QPushButton *pushButton_Annuler;
     QLabel *label_11;
     QDateEdit *date_assurance;
     QComboBox *comboBox_dipo;
@@ -149,11 +146,13 @@ public:
     QFrame *pdf;
     QPushButton *pushButton_53;
     QTableWidget *tableWidget_Vehicule;
-    QFrame *modif;
-    QPushButton *pushButton_105;
-    QLineEdit *lineEdit_supprimer_2;
     QFrame *utilisateur;
     QPushButton *pushButton_54;
+    QFrame *pdf_6;
+    QPushButton *pushButton_Ajouter;
+    QPushButton *pushButton_105;
+    QPushButton *pushButton_Annuler;
+    QFrame *pdf_7;
     QPushButton *btnStats;
     QWidget *tab2;
     QGroupBox *groupBox_6;
@@ -201,9 +200,9 @@ public:
     QPushButton *employee_3;
     QPushButton *seance_3;
     QPushButton *examen_3;
-    QLabel *label_20;
     QFrame *utilisateur_3;
     QPushButton *pushButton_56;
+    QLabel *label_53;
     QWidget *tab3;
     QGroupBox *frame4;
     QLabel *label_58;
@@ -238,7 +237,6 @@ public:
     QComboBox *comboBox_4;
     QLabel *label_13;
     QComboBox *comboBox_9;
-    QLabel *label_21;
     QFrame *menu3;
     QPushButton *candidat_4;
     QPushButton *vehicule_4;
@@ -249,6 +247,7 @@ public:
     QLabel *label_135;
     QFrame *utilisateur_4;
     QPushButton *pushButton_57;
+    QLabel *label_20;
     QWidget *tab4;
     QGroupBox *groupBox_12;
     QLabel *label_69;
@@ -282,7 +281,6 @@ public:
     QComboBox *comboBox_8;
     QGroupBox *groupBox_17;
     QLabel *label_48;
-    QLabel *label_22;
     QFrame *menu4;
     QPushButton *candidat_5;
     QPushButton *vehicule_5;
@@ -291,6 +289,7 @@ public:
     QPushButton *examen_5;
     QFrame *utilisateur_5;
     QPushButton *pushButton_58;
+    QLabel *label_21;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -302,14 +301,14 @@ public:
         centralwidget->setObjectName("centralwidget");
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName("tabWidget");
-        tabWidget->setGeometry(QRect(-10, -20, 1511, 841));
+        tabWidget->setGeometry(QRect(-10, -20, 1541, 801));
         tabWidget->setStyleSheet(QString::fromUtf8("background-color: gray;\n"
 ""));
         login = new QWidget();
         login->setObjectName("login");
         frame_2 = new QFrame(login);
         frame_2->setObjectName("frame_2");
-        frame_2->setGeometry(QRect(0, 30, 1501, 781));
+        frame_2->setGeometry(QRect(0, 0, 1541, 811));
         frame_2->setStyleSheet(QString::fromUtf8("background-color: grey;"));
         frame_2->setFrameShape(QFrame::Shape::StyledPanel);
         frame_2->setFrameShadow(QFrame::Shadow::Raised);
@@ -379,7 +378,7 @@ public:
         tab->setObjectName("tab");
         frame = new QFrame(tab);
         frame->setObjectName("frame");
-        frame->setGeometry(QRect(-1, -1, 1491, 731));
+        frame->setGeometry(QRect(-1, -1, 1541, 761));
         frame->setFrameShape(QFrame::Shape::StyledPanel);
         frame->setFrameShadow(QFrame::Shadow::Raised);
         frame_login_2 = new QFrame(frame);
@@ -434,7 +433,7 @@ public:
         tab0->setObjectName("tab0");
         groupBox_4 = new QGroupBox(tab0);
         groupBox_4->setObjectName("groupBox_4");
-        groupBox_4->setGeometry(QRect(0, 140, 371, 541));
+        groupBox_4->setGeometry(QRect(10, 190, 371, 541));
         QFont font;
         font.setPointSize(14);
         font.setBold(true);
@@ -547,12 +546,12 @@ public:
         if (tableWidget_4->rowCount() < 8)
             tableWidget_4->setRowCount(8);
         tableWidget_4->setObjectName("tableWidget_4");
-        tableWidget_4->setGeometry(QRect(380, 210, 691, 381));
+        tableWidget_4->setGeometry(QRect(400, 250, 691, 381));
         tableWidget_4->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
-"background-color: red;"));
+"background-color: white;"));
         frame2_3 = new QFrame(tab0);
         frame2_3->setObjectName("frame2_3");
-        frame2_3->setGeometry(QRect(0, 100, 321, 61));
+        frame2_3->setGeometry(QRect(10, 150, 321, 61));
         frame2_3->setStyleSheet(QString::fromUtf8("#frame2_3{\n"
 "border: 3px solid grey ;\n"
 "border-radius: 20px;\n"
@@ -566,7 +565,7 @@ public:
         label_78->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         recherche_4 = new QFrame(tab0);
         recherche_4->setObjectName("recherche_4");
-        recherche_4->setGeometry(QRect(380, 120, 681, 80));
+        recherche_4->setGeometry(QRect(400, 160, 681, 80));
         recherche_4->setStyleSheet(QString::fromUtf8("#recherche_4{\n"
 "	border-color: rgb(85, 170, 0);\n"
 "border-radius: 20px;\n"
@@ -612,7 +611,7 @@ public:
 "    padding: 4px 8px;"));
         groupBox_16 = new QGroupBox(tab0);
         groupBox_16->setObjectName("groupBox_16");
-        groupBox_16->setGeometry(QRect(1100, 220, 301, 361));
+        groupBox_16->setGeometry(QRect(1150, 210, 301, 361));
         QFont font4;
         font4.setPointSize(14);
         font4.setBold(true);
@@ -622,7 +621,7 @@ public:
         label_36->setGeometry(QRect(70, 120, 231, 171));
         pdf_4 = new QFrame(tab0);
         pdf_4->setObjectName("pdf_4");
-        pdf_4->setGeometry(QRect(380, 600, 341, 80));
+        pdf_4->setGeometry(QRect(400, 650, 341, 80));
         pdf_4->setStyleSheet(QString::fromUtf8("#pdf_4{\n"
 "	border-color: rgb(85, 170, 0);\n"
 "border-radius: 20px;\n"
@@ -652,7 +651,7 @@ public:
 "  "));
         supp_4 = new QFrame(tab0);
         supp_4->setObjectName("supp_4");
-        supp_4->setGeometry(QRect(1050, 600, 431, 80));
+        supp_4->setGeometry(QRect(1060, 650, 431, 80));
         supp_4->setStyleSheet(QString::fromUtf8("#supp_4{\n"
 "	border-color: rgb(85, 170, 0);\n"
 "border-radius: 20px;\n"
@@ -674,10 +673,6 @@ public:
         lineEdit_15->setGeometry(QRect(260, 20, 141, 41));
         lineEdit_15->setStyleSheet(QString::fromUtf8("background-color: rgb(100, 100, 100);\n"
 "border-color: rgb(0, 0, 0);"));
-        label_50 = new QLabel(tab0);
-        label_50->setObjectName("label_50");
-        label_50->setGeometry(QRect(-20, 0, 271, 121));
-        label_50->setPixmap(QPixmap(QString::fromUtf8(":/images/logo.png")));
         menu1 = new QFrame(tab0);
         menu1->setObjectName("menu1");
         menu1->setGeometry(QRect(260, 10, 1001, 80));
@@ -765,8 +760,12 @@ public:
         pushButton_55 = new QPushButton(utilisateur_2);
         pushButton_55->setObjectName("pushButton_55");
         pushButton_55->setGeometry(QRect(20, 20, 151, 41));
+        label_22 = new QLabel(tab0);
+        label_22->setObjectName("label_22");
+        label_22->setGeometry(QRect(-120, 0, 371, 121));
+        label_22->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/logo.png")));
         tabWidget->addTab(tab0, QString());
-        label_50->raise();
+        label_22->raise();
         groupBox_4->raise();
         tableWidget_4->raise();
         frame2_3->raise();
@@ -787,7 +786,7 @@ public:
         label_17->setGeometry(QRect(80, 70, 231, 171));
         groupBox = new QGroupBox(tab1);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(10, 180, 371, 541));
+        groupBox->setGeometry(QRect(10, 180, 371, 501));
         groupBox->setFont(font);
         groupBox->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "background-color: rgb(255, 0, 0);\n"
@@ -853,18 +852,6 @@ public:
         radioButton_ResponsabiliteCivile = new QRadioButton(groupBox);
         radioButton_ResponsabiliteCivile->setObjectName("radioButton_ResponsabiliteCivile");
         radioButton_ResponsabiliteCivile->setGeometry(QRect(150, 410, 201, 25));
-        pushButton_Ajouter = new QPushButton(groupBox);
-        pushButton_Ajouter->setObjectName("pushButton_Ajouter");
-        pushButton_Ajouter->setGeometry(QRect(20, 500, 91, 29));
-        pushButton_Ajouter->setStyleSheet(QString::fromUtf8("background-color: rgb(124, 124, 124);"));
-        pushButton_Modifier = new QPushButton(groupBox);
-        pushButton_Modifier->setObjectName("pushButton_Modifier");
-        pushButton_Modifier->setGeometry(QRect(140, 500, 91, 29));
-        pushButton_Modifier->setStyleSheet(QString::fromUtf8("background-color: rgb(124, 124, 124);"));
-        pushButton_Annuler = new QPushButton(groupBox);
-        pushButton_Annuler->setObjectName("pushButton_Annuler");
-        pushButton_Annuler->setGeometry(QRect(260, 500, 91, 29));
-        pushButton_Annuler->setStyleSheet(QString::fromUtf8("background-color: rgb(124, 124, 124);"));
         label_11 = new QLabel(groupBox);
         label_11->setObjectName("label_11");
         label_11->setGeometry(QRect(10, 440, 141, 41));
@@ -953,9 +940,9 @@ public:
         calendarWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);"));
         frame2 = new QFrame(tab1);
         frame2->setObjectName("frame2");
-        frame2->setGeometry(QRect(20, 150, 311, 51));
+        frame2->setGeometry(QRect(20, 150, 291, 51));
         frame2->setStyleSheet(QString::fromUtf8("#frame2{\n"
-"border: 3px solid grey ;\n"
+"\n"
 "border-radius: 20px;\n"
 "background: white ;\n"
 "}"));
@@ -967,8 +954,8 @@ public:
         label_77->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         label_19 = new QLabel(tab1);
         label_19->setObjectName("label_19");
-        label_19->setGeometry(QRect(-10, 0, 271, 121));
-        label_19->setPixmap(QPixmap(QString::fromUtf8(":/images/logo.png")));
+        label_19->setGeometry(QRect(-120, 20, 371, 121));
+        label_19->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/logo.png")));
         recherche = new QFrame(tab1);
         recherche->setObjectName("recherche");
         recherche->setGeometry(QRect(390, 150, 721, 80));
@@ -1007,7 +994,7 @@ public:
         pushButton_Rechercher->setGeometry(QRect(300, 20, 121, 31));
         supp = new QFrame(tab1);
         supp->setObjectName("supp");
-        supp->setGeometry(QRect(1050, 640, 431, 80));
+        supp->setGeometry(QRect(1060, 650, 431, 80));
         supp->setStyleSheet(QString::fromUtf8("#supp{\n"
 "	border-color: rgb(85, 170, 0);\n"
 "border-radius: 20px;\n"
@@ -1025,7 +1012,7 @@ public:
         pushButton_supprimer->setGeometry(QRect(20, 20, 211, 41));
         pdf = new QFrame(tab1);
         pdf->setObjectName("pdf");
-        pdf->setGeometry(QRect(390, 640, 191, 80));
+        pdf->setGeometry(QRect(850, 650, 191, 80));
         pdf->setStyleSheet(QString::fromUtf8("#pdf{\n"
 "	border-color: rgb(85, 170, 0);\n"
 "border-radius: 20px;\n"
@@ -1057,29 +1044,11 @@ public:
         tableWidget_Vehicule->setHorizontalHeaderItem(7, __qtablewidgetitem12);
         tableWidget_Vehicule->setObjectName("tableWidget_Vehicule");
         tableWidget_Vehicule->setGeometry(QRect(390, 240, 751, 391));
-        tableWidget_Vehicule->setStyleSheet(QString::fromUtf8("background-color: red                  ;\n"
+        tableWidget_Vehicule->setStyleSheet(QString::fromUtf8("background-color: white               ;\n"
 "selection-color: rgb(255, 0, 0);\n"
 "alternate-background-color: rgb(255, 0, 0);\n"
 "color: black\n"
 ""));
-        modif = new QFrame(tab1);
-        modif->setObjectName("modif");
-        modif->setGeometry(QRect(650, 640, 331, 80));
-        modif->setStyleSheet(QString::fromUtf8("#modif{\n"
-"	border-color: rgb(85, 170, 0);\n"
-"border-radius: 20px;\n"
-"background: white ;\n"
-"}"));
-        modif->setFrameShape(QFrame::Shape::StyledPanel);
-        modif->setFrameShadow(QFrame::Shadow::Raised);
-        pushButton_105 = new QPushButton(modif);
-        pushButton_105->setObjectName("pushButton_105");
-        pushButton_105->setGeometry(QRect(20, 20, 131, 41));
-        lineEdit_supprimer_2 = new QLineEdit(modif);
-        lineEdit_supprimer_2->setObjectName("lineEdit_supprimer_2");
-        lineEdit_supprimer_2->setGeometry(QRect(170, 20, 141, 41));
-        lineEdit_supprimer_2->setStyleSheet(QString::fromUtf8("background-color: rgb(100, 100, 100);\n"
-"border-color: rgb(0, 0, 0);"));
         utilisateur = new QFrame(tab1);
         utilisateur->setObjectName("utilisateur");
         utilisateur->setGeometry(QRect(1290, 10, 191, 80));
@@ -1093,10 +1062,43 @@ public:
         pushButton_54 = new QPushButton(utilisateur);
         pushButton_54->setObjectName("pushButton_54");
         pushButton_54->setGeometry(QRect(20, 20, 151, 41));
-        btnStats = new QPushButton(tab1);
+        pdf_6 = new QFrame(tab1);
+        pdf_6->setObjectName("pdf_6");
+        pdf_6->setGeometry(QRect(90, 640, 281, 81));
+        pdf_6->setStyleSheet(QString::fromUtf8("#pdf_6{\n"
+"	border-color: rgb(85, 170, 0);\n"
+"border-radius: 10px;\n"
+"background: white ;\n"
+"}"));
+        pdf_6->setFrameShape(QFrame::Shape::StyledPanel);
+        pdf_6->setFrameShadow(QFrame::Shadow::Raised);
+        pushButton_Ajouter = new QPushButton(pdf_6);
+        pushButton_Ajouter->setObjectName("pushButton_Ajouter");
+        pushButton_Ajouter->setGeometry(QRect(10, 50, 81, 21));
+        pushButton_Ajouter->setStyleSheet(QString::fromUtf8("background-color: rgb(124, 124, 124);"));
+        pushButton_105 = new QPushButton(pdf_6);
+        pushButton_105->setObjectName("pushButton_105");
+        pushButton_105->setGeometry(QRect(100, 50, 81, 21));
+        pushButton_105->setStyleSheet(QString::fromUtf8("background-color: rgb(124, 124, 124);"));
+        pushButton_Annuler = new QPushButton(pdf_6);
+        pushButton_Annuler->setObjectName("pushButton_Annuler");
+        pushButton_Annuler->setGeometry(QRect(190, 50, 81, 21));
+        pushButton_Annuler->setStyleSheet(QString::fromUtf8("background-color: rgb(124, 124, 124);"));
+        pdf_7 = new QFrame(tab1);
+        pdf_7->setObjectName("pdf_7");
+        pdf_7->setGeometry(QRect(640, 650, 191, 80));
+        pdf_7->setStyleSheet(QString::fromUtf8("#pdf_7{\n"
+"	border-color: rgb(85, 170, 0);\n"
+"border-radius: 20px;\n"
+"background: white ;\n"
+"}"));
+        pdf_7->setFrameShape(QFrame::Shape::StyledPanel);
+        pdf_7->setFrameShadow(QFrame::Shadow::Raised);
+        btnStats = new QPushButton(pdf_7);
         btnStats->setObjectName("btnStats");
-        btnStats->setGeometry(QRect(1330, 110, 151, 41));
+        btnStats->setGeometry(QRect(20, 20, 151, 41));
         tabWidget->addTab(tab1, QString());
+        pdf_6->raise();
         label_19->raise();
         pdf->raise();
         supp->raise();
@@ -1107,14 +1109,13 @@ public:
         calendarWidget->raise();
         frame2->raise();
         tableWidget_Vehicule->raise();
-        modif->raise();
         utilisateur->raise();
-        btnStats->raise();
+        pdf_7->raise();
         tab2 = new QWidget();
         tab2->setObjectName("tab2");
         groupBox_6 = new QGroupBox(tab2);
         groupBox_6->setObjectName("groupBox_6");
-        groupBox_6->setGeometry(QRect(0, 120, 371, 551));
+        groupBox_6->setGeometry(QRect(10, 180, 371, 551));
         groupBox_6->setFont(font);
         groupBox_6->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "background-color: rgb(255, 0, 0);\n"
@@ -1236,11 +1237,12 @@ public:
         if (tableWidget_3->rowCount() < 6)
             tableWidget_3->setRowCount(6);
         tableWidget_3->setObjectName("tableWidget_3");
-        tableWidget_3->setGeometry(QRect(390, 200, 781, 361));
-        tableWidget_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);"));
+        tableWidget_3->setGeometry(QRect(400, 250, 781, 381));
+        tableWidget_3->setStyleSheet(QString::fromUtf8("background-color: white;\n"
+"color: rgb(0, 0, 0);"));
         frame2_2 = new QFrame(tab2);
         frame2_2->setObjectName("frame2_2");
-        frame2_2->setGeometry(QRect(0, 100, 301, 51));
+        frame2_2->setGeometry(QRect(10, 150, 301, 51));
         frame2_2->setStyleSheet(QString::fromUtf8("#frame2_2{\n"
 "border: 3px solid grey ;\n"
 "border-radius: 20px;\n"
@@ -1254,7 +1256,7 @@ public:
         label_79->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         recherche_3 = new QFrame(tab2);
         recherche_3->setObjectName("recherche_3");
-        recherche_3->setGeometry(QRect(390, 100, 781, 80));
+        recherche_3->setGeometry(QRect(400, 160, 781, 80));
         recherche_3->setStyleSheet(QString::fromUtf8("#recherche_3{\n"
 "	border-color: rgb(85, 170, 0);\n"
 "border-radius: 20px;\n"
@@ -1296,7 +1298,7 @@ public:
 "    padding: 4px 8px;"));
         pdf_3 = new QFrame(tab2);
         pdf_3->setObjectName("pdf_3");
-        pdf_3->setGeometry(QRect(390, 590, 341, 80));
+        pdf_3->setGeometry(QRect(400, 650, 341, 80));
         pdf_3->setStyleSheet(QString::fromUtf8("#pdf_3{\n"
 "	border-color: rgb(85, 170, 0);\n"
 "border-radius: 20px;\n"
@@ -1326,7 +1328,7 @@ public:
 "  "));
         supp_3 = new QFrame(tab2);
         supp_3->setObjectName("supp_3");
-        supp_3->setGeometry(QRect(1050, 590, 431, 80));
+        supp_3->setGeometry(QRect(1070, 650, 431, 80));
         supp_3->setStyleSheet(QString::fromUtf8("#supp_3{\n"
 "	border-color: rgb(85, 170, 0);\n"
 "border-radius: 20px;\n"
@@ -1350,7 +1352,7 @@ public:
 "border-color: rgb(0, 0, 0);"));
         groupBox_15 = new QGroupBox(tab2);
         groupBox_15->setObjectName("groupBox_15");
-        groupBox_15->setGeometry(QRect(1180, 200, 301, 361));
+        groupBox_15->setGeometry(QRect(1220, 240, 301, 361));
         groupBox_15->setFont(font4);
         label_27 = new QLabel(groupBox_15);
         label_27->setObjectName("label_27");
@@ -1420,10 +1422,6 @@ public:
 "    padding: 8px 16px;           /* espace interne */\n"
 "    \n"
 "    border: none;"));
-        label_20 = new QLabel(tab2);
-        label_20->setObjectName("label_20");
-        label_20->setGeometry(QRect(-10, 0, 271, 121));
-        label_20->setPixmap(QPixmap(QString::fromUtf8(":/images/logo.png")));
         utilisateur_3 = new QFrame(tab2);
         utilisateur_3->setObjectName("utilisateur_3");
         utilisateur_3->setGeometry(QRect(1280, 10, 191, 80));
@@ -1437,8 +1435,12 @@ public:
         pushButton_56 = new QPushButton(utilisateur_3);
         pushButton_56->setObjectName("pushButton_56");
         pushButton_56->setGeometry(QRect(20, 20, 151, 41));
+        label_53 = new QLabel(tab2);
+        label_53->setObjectName("label_53");
+        label_53->setGeometry(QRect(-110, 0, 371, 121));
+        label_53->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/logo.png")));
         tabWidget->addTab(tab2, QString());
-        label_20->raise();
+        label_53->raise();
         groupBox_6->raise();
         tableWidget_3->raise();
         frame2_2->raise();
@@ -1582,7 +1584,8 @@ public:
             tableWidget_11->setRowCount(6);
         tableWidget_11->setObjectName("tableWidget_11");
         tableWidget_11->setGeometry(QRect(380, 230, 761, 371));
-        tableWidget_11->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);"));
+        tableWidget_11->setStyleSheet(QString::fromUtf8("background-color: white;\n"
+"color: rgb(0, 0, 0);"));
         pdf_2 = new QFrame(tab3);
         pdf_2->setObjectName("pdf_2");
         pdf_2->setGeometry(QRect(380, 610, 341, 80));
@@ -1693,10 +1696,6 @@ public:
 "    border: 1px solid #666666;\n"
 "    border-radius: 6px;\n"
 "    padding: 4px 8px;"));
-        label_21 = new QLabel(tab3);
-        label_21->setObjectName("label_21");
-        label_21->setGeometry(QRect(-20, 0, 271, 121));
-        label_21->setPixmap(QPixmap(QString::fromUtf8(":/images/logo.png")));
         menu3 = new QFrame(tab3);
         menu3->setObjectName("menu3");
         menu3->setGeometry(QRect(260, 10, 1001, 80));
@@ -1789,8 +1788,12 @@ public:
         pushButton_57 = new QPushButton(utilisateur_4);
         pushButton_57->setObjectName("pushButton_57");
         pushButton_57->setGeometry(QRect(20, 20, 151, 41));
+        label_20 = new QLabel(tab3);
+        label_20->setObjectName("label_20");
+        label_20->setGeometry(QRect(-120, 20, 371, 121));
+        label_20->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/logo.png")));
         tabWidget->addTab(tab3, QString());
-        label_21->raise();
+        label_20->raise();
         frame4->raise();
         tableWidget_11->raise();
         pdf_2->raise();
@@ -1804,7 +1807,7 @@ public:
         tab4->setObjectName("tab4");
         groupBox_12 = new QGroupBox(tab4);
         groupBox_12->setObjectName("groupBox_12");
-        groupBox_12->setGeometry(QRect(10, 160, 371, 531));
+        groupBox_12->setGeometry(QRect(10, 190, 371, 531));
         groupBox_12->setFont(font);
         groupBox_12->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "background-color: rgb(255, 0, 0);\n"
@@ -1902,11 +1905,12 @@ public:
         if (tableWidget_6->rowCount() < 10)
             tableWidget_6->setRowCount(10);
         tableWidget_6->setObjectName("tableWidget_6");
-        tableWidget_6->setGeometry(QRect(390, 210, 751, 391));
-        tableWidget_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);"));
+        tableWidget_6->setGeometry(QRect(390, 240, 751, 391));
+        tableWidget_6->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
+"background-color: rgb(255, 255, 255);"));
         frame2_4 = new QFrame(tab4);
         frame2_4->setObjectName("frame2_4");
-        frame2_4->setGeometry(QRect(20, 130, 261, 51));
+        frame2_4->setGeometry(QRect(20, 160, 261, 51));
         frame2_4->setStyleSheet(QString::fromUtf8("#frame2_4{\n"
 "border: 3px solid grey ;\n"
 "border-radius: 20px;\n"
@@ -1920,7 +1924,7 @@ public:
         label_80->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         pdf_5 = new QFrame(tab4);
         pdf_5->setObjectName("pdf_5");
-        pdf_5->setGeometry(QRect(390, 610, 341, 80));
+        pdf_5->setGeometry(QRect(390, 640, 341, 80));
         pdf_5->setStyleSheet(QString::fromUtf8("#pdf_5{\n"
 "	border-color: rgb(85, 170, 0);\n"
 "border-radius: 20px;\n"
@@ -1950,7 +1954,7 @@ public:
 "  "));
         supp_5 = new QFrame(tab4);
         supp_5->setObjectName("supp_5");
-        supp_5->setGeometry(QRect(1040, 610, 431, 80));
+        supp_5->setGeometry(QRect(1050, 640, 431, 80));
         supp_5->setStyleSheet(QString::fromUtf8("#supp_5{\n"
 "	border-color: rgb(85, 170, 0);\n"
 "border-radius: 20px;\n"
@@ -1974,7 +1978,7 @@ public:
 "border-color: rgb(0, 0, 0);"));
         recherche_5 = new QFrame(tab4);
         recherche_5->setObjectName("recherche_5");
-        recherche_5->setGeometry(QRect(390, 130, 751, 80));
+        recherche_5->setGeometry(QRect(390, 150, 751, 80));
         recherche_5->setStyleSheet(QString::fromUtf8("#recherche_5{\n"
 "	border-color: rgb(85, 170, 0);\n"
 "border-radius: 20px;\n"
@@ -2016,15 +2020,11 @@ public:
 "    padding: 4px 8px;"));
         groupBox_17 = new QGroupBox(tab4);
         groupBox_17->setObjectName("groupBox_17");
-        groupBox_17->setGeometry(QRect(1160, 180, 301, 391));
+        groupBox_17->setGeometry(QRect(1180, 220, 301, 391));
         groupBox_17->setFont(font4);
         label_48 = new QLabel(groupBox_17);
         label_48->setObjectName("label_48");
         label_48->setGeometry(QRect(70, 120, 231, 171));
-        label_22 = new QLabel(tab4);
-        label_22->setObjectName("label_22");
-        label_22->setGeometry(QRect(10, 0, 271, 121));
-        label_22->setPixmap(QPixmap(QString::fromUtf8(":/images/logo.png")));
         menu4 = new QFrame(tab4);
         menu4->setObjectName("menu4");
         menu4->setGeometry(QRect(260, 10, 1001, 80));
@@ -2103,8 +2103,12 @@ public:
         pushButton_58 = new QPushButton(utilisateur_5);
         pushButton_58->setObjectName("pushButton_58");
         pushButton_58->setGeometry(QRect(20, 20, 151, 41));
+        label_21 = new QLabel(tab4);
+        label_21->setObjectName("label_21");
+        label_21->setGeometry(QRect(-120, 10, 371, 121));
+        label_21->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/logo.png")));
         tabWidget->addTab(tab4, QString());
-        label_22->raise();
+        label_21->raise();
         groupBox_12->raise();
         tableWidget_6->raise();
         frame2_4->raise();
@@ -2121,7 +2125,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -2175,7 +2179,6 @@ public:
         pushButton_79->setText(QCoreApplication::translate("MainWindow", "exportation PDF \360\237\227\216", nullptr));
         pushButton_18->setText(QCoreApplication::translate("MainWindow", "modifier \342\234\217\357\270\217", nullptr));
         pushButton_20->setText(QCoreApplication::translate("MainWindow", "supprimer  \360\237\227\221\357\270\217", nullptr));
-        label_50->setText(QString());
 #if QT_CONFIG(whatsthis)
         candidat->setWhatsThis(QCoreApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
 #endif // QT_CONFIG(whatsthis)
@@ -2185,13 +2188,14 @@ public:
         seance->setText(QCoreApplication::translate("MainWindow", "Seance \360\237\247\255", nullptr));
         examen->setText(QCoreApplication::translate("MainWindow", "Examen \360\237\205\277\357\270\217", nullptr));
         pushButton_55->setText(QCoreApplication::translate("MainWindow", "Changer Utilisateur", nullptr));
+        label_22->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab0), QCoreApplication::translate("MainWindow", "Page", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("MainWindow", "statistique \360\237\223\212", nullptr));
         label_17->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:72pt;\">\360\237\223\212</span></p></body></html>", nullptr));
         groupBox->setTitle(QString());
         label_mat->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:11pt; text-decoration: underline;\">Matricule </span><span style=\" font-size:14pt;\">\360\237\224\242</span></p></body></html>", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:11pt; text-decoration: underline;\">Etat </span><span style=\" font-size:14pt;\">\342\232\231\357\270\217</span></p></body></html>", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:11pt; text-decoration: underline;\">Diponibilite </span><span style=\" font-size:12pt;\">\360\237\225\222</span></p></body></html>", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:11pt; text-decoration: underline;\">Disponibilite </span><span style=\" font-size:12pt;\">\360\237\225\222</span></p></body></html>", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:11pt; text-decoration: underline;\">Kilometrage </span><span style=\" font-size:12pt;\">\360\237\223\217</span></p></body></html>", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:11pt; text-decoration: underline;\">Date De Maintenance </span><span style=\" font-size:12pt;\">\360\237\233\240\357\270\217</span></p></body></html>", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:11pt; text-decoration: underline;\">Type  </span><span style=\" font-size:12pt;\">\360\237\232\231</span></p></body></html>", nullptr));
@@ -2205,9 +2209,6 @@ public:
         radioButton_TousRisque->setText(QCoreApplication::translate("MainWindow", "Tous Risque", nullptr));
         radioButton_Intermediaire->setText(QCoreApplication::translate("MainWindow", "Intermediare", nullptr));
         radioButton_ResponsabiliteCivile->setText(QCoreApplication::translate("MainWindow", "Responsabilite civile RC", nullptr));
-        pushButton_Ajouter->setText(QCoreApplication::translate("MainWindow", "Ajouter \342\236\225", nullptr));
-        pushButton_Modifier->setText(QCoreApplication::translate("MainWindow", " Modifier \342\234\217\357\270\217", nullptr));
-        pushButton_Annuler->setText(QCoreApplication::translate("MainWindow", "Annuler \342\235\214", nullptr));
         label_11->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt;\">Date Assurances</span></p></body></html>", nullptr));
         comboBox_dipo->setItemText(0, QCoreApplication::translate("MainWindow", "OUI", nullptr));
         comboBox_dipo->setItemText(1, QCoreApplication::translate("MainWindow", "NON", nullptr));
@@ -2247,8 +2248,10 @@ public:
         ___qtablewidgetitem11->setText(QCoreApplication::translate("MainWindow", "Disponibilite", nullptr));
         QTableWidgetItem *___qtablewidgetitem12 = tableWidget_Vehicule->horizontalHeaderItem(7);
         ___qtablewidgetitem12->setText(QCoreApplication::translate("MainWindow", "Date Assurance", nullptr));
-        pushButton_105->setText(QCoreApplication::translate("MainWindow", "modifier \342\234\217\357\270\217", nullptr));
         pushButton_54->setText(QCoreApplication::translate("MainWindow", "Changer Utilisateur", nullptr));
+        pushButton_Ajouter->setText(QCoreApplication::translate("MainWindow", "Ajouter \342\236\225", nullptr));
+        pushButton_105->setText(QCoreApplication::translate("MainWindow", " Modifier \342\234\217\357\270\217", nullptr));
+        pushButton_Annuler->setText(QCoreApplication::translate("MainWindow", "Annuler \342\235\214", nullptr));
         btnStats->setText(QCoreApplication::translate("MainWindow", "statistique \360\237\223\212", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab1), QCoreApplication::translate("MainWindow", "Tab 1", nullptr));
         groupBox_6->setTitle(QString());
@@ -2305,8 +2308,8 @@ public:
         employee_3->setText(QCoreApplication::translate("MainWindow", "Employee \360\237\247\221\342\200\215\360\237\217\253", nullptr));
         seance_3->setText(QCoreApplication::translate("MainWindow", "Seance \360\237\247\255", nullptr));
         examen_3->setText(QCoreApplication::translate("MainWindow", "Examen \360\237\205\277\357\270\217", nullptr));
-        label_20->setText(QString());
         pushButton_56->setText(QCoreApplication::translate("MainWindow", "Changer Utilisateur", nullptr));
+        label_53->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab2), QCoreApplication::translate("MainWindow", "Tab 2", nullptr));
         frame4->setTitle(QString());
         label_58->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" text-decoration: underline; color:#000000;\">ID_Seance</span></p></body></html>", nullptr));
@@ -2348,7 +2351,6 @@ public:
         comboBox_9->setItemText(0, QCoreApplication::translate("MainWindow", "Date", nullptr));
         comboBox_9->setItemText(1, QCoreApplication::translate("MainWindow", "Lieu_depart", nullptr));
 
-        label_21->setText(QString());
 #if QT_CONFIG(whatsthis)
         candidat_4->setWhatsThis(QCoreApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
 #endif // QT_CONFIG(whatsthis)
@@ -2359,6 +2361,7 @@ public:
         examen_4->setText(QCoreApplication::translate("MainWindow", "Examen \360\237\205\277\357\270\217", nullptr));
         label_135->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:700; font-style:italic; text-decoration: underline; color:#000000;\">Ajouter une Seance</span></p></body></html>", nullptr));
         pushButton_57->setText(QCoreApplication::translate("MainWindow", "Changer Utilisateur", nullptr));
+        label_20->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab3), QCoreApplication::translate("MainWindow", "Page", nullptr));
         groupBox_12->setTitle(QString());
         label_69->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:11pt; text-decoration: underline;\">Nom</span></p></body></html>", nullptr));
@@ -2393,7 +2396,6 @@ public:
 
         groupBox_17->setTitle(QCoreApplication::translate("MainWindow", "statistique \360\237\223\212", nullptr));
         label_48->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:72pt;\">\360\237\223\212</span></p></body></html>", nullptr));
-        label_22->setText(QString());
 #if QT_CONFIG(whatsthis)
         candidat_5->setWhatsThis(QCoreApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
 #endif // QT_CONFIG(whatsthis)
@@ -2403,6 +2405,7 @@ public:
         seance_5->setText(QCoreApplication::translate("MainWindow", "Seance \360\237\247\255", nullptr));
         examen_5->setText(QCoreApplication::translate("MainWindow", " Examen \360\237\205\277\357\270\217", nullptr));
         pushButton_58->setText(QCoreApplication::translate("MainWindow", "Changer Utilisateur", nullptr));
+        label_21->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab4), QCoreApplication::translate("MainWindow", "Page", nullptr));
     } // retranslateUi
 

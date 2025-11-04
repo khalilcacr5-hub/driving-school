@@ -19,8 +19,8 @@
      <rect>
       <x>-10</x>
       <y>-20</y>
-      <width>1511</width>
-      <height>841</height>
+      <width>1541</width>
+      <height>801</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -38,9 +38,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>30</y>
-        <width>1501</width>
-        <height>781</height>
+        <y>0</y>
+        <width>1541</width>
+        <height>811</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -238,8 +238,8 @@ font-weight: bold;
        <rect>
         <x>-1</x>
         <y>-1</y>
-        <width>1491</width>
-        <height>731</height>
+        <width>1541</width>
+        <height>761</height>
        </rect>
       </property>
       <property name="frameShape">
@@ -394,8 +394,8 @@ background: white ;
      <widget class="QGroupBox" name="groupBox_4">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>140</y>
+        <x>10</x>
+        <y>190</y>
         <width>371</width>
         <height>541</height>
        </rect>
@@ -709,15 +709,15 @@ background-color: rgb(255, 255, 255);</string>
      <widget class="QTableWidget" name="tableWidget_4">
       <property name="geometry">
        <rect>
-        <x>380</x>
-        <y>210</y>
+        <x>400</x>
+        <y>250</y>
         <width>691</width>
         <height>381</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(0, 0, 0);
-background-color: red;</string>
+background-color: white;</string>
       </property>
       <row/>
       <row/>
@@ -756,8 +756,8 @@ background-color: red;</string>
      <widget class="QFrame" name="frame2_3">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>100</y>
+        <x>10</x>
+        <y>150</y>
         <width>321</width>
         <height>61</height>
        </rect>
@@ -795,8 +795,8 @@ background: white ;
      <widget class="QFrame" name="recherche_4">
       <property name="geometry">
        <rect>
-        <x>380</x>
-        <y>120</y>
+        <x>400</x>
+        <y>160</y>
         <width>681</width>
         <height>80</height>
        </rect>
@@ -925,8 +925,8 @@ background: white ;
      <widget class="QGroupBox" name="groupBox_16">
       <property name="geometry">
        <rect>
-        <x>1100</x>
-        <y>220</y>
+        <x>1150</x>
+        <y>210</y>
         <width>301</width>
         <height>361</height>
        </rect>
@@ -957,8 +957,8 @@ background: white ;
      <widget class="QFrame" name="pdf_4">
       <property name="geometry">
        <rect>
-        <x>380</x>
-        <y>600</y>
+        <x>400</x>
+        <y>650</y>
         <width>341</width>
         <height>80</height>
        </rect>
@@ -1029,8 +1029,8 @@ alternate-background-color: rgb(188, 188, 188);
      <widget class="QFrame" name="supp_4">
       <property name="geometry">
        <rect>
-        <x>1050</x>
-        <y>600</y>
+        <x>1060</x>
+        <y>650</y>
         <width>431</width>
         <height>80</height>
        </rect>
@@ -1083,22 +1083,6 @@ background: white ;
 border-color: rgb(0, 0, 0);</string>
        </property>
       </widget>
-     </widget>
-     <widget class="QLabel" name="label_50">
-      <property name="geometry">
-       <rect>
-        <x>-20</x>
-        <y>0</y>
-        <width>271</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>:/images/logo.png</pixmap>
-      </property>
      </widget>
      <widget class="QFrame" name="menu1">
       <property name="geometry">
@@ -1318,7 +1302,23 @@ background: white ;
        </property>
       </widget>
      </widget>
-     <zorder>label_50</zorder>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>-120</x>
+        <y>0</y>
+        <width>371</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resource.qrc">:/new/prefix1/logo.png</pixmap>
+      </property>
+     </widget>
+     <zorder>label_22</zorder>
      <zorder>groupBox_4</zorder>
      <zorder>tableWidget_4</zorder>
      <zorder>frame2_3</zorder>
@@ -1371,7 +1371,7 @@ background: white ;
         <x>10</x>
         <y>180</y>
         <width>371</width>
-        <height>541</height>
+        <height>501</height>
        </rect>
       </property>
       <property name="font">
@@ -1456,7 +1456,7 @@ border-radius: 20px;
         </font>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; text-decoration: underline;&quot;&gt;Diponibilite &lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;🕒&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; text-decoration: underline;&quot;&gt;Disponibilite &lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;🕒&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_4">
@@ -1673,54 +1673,6 @@ border-radius: 20px;
        </property>
        <property name="text">
         <string>Responsabilite civile RC</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_Ajouter">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>500</y>
-         <width>91</width>
-         <height>29</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(124, 124, 124);</string>
-       </property>
-       <property name="text">
-        <string>Ajouter ➕</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_Modifier">
-       <property name="geometry">
-        <rect>
-         <x>140</x>
-         <y>500</y>
-         <width>91</width>
-         <height>29</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(124, 124, 124);</string>
-       </property>
-       <property name="text">
-        <string> Modifier ✏️</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_Annuler">
-       <property name="geometry">
-        <rect>
-         <x>260</x>
-         <y>500</y>
-         <width>91</width>
-         <height>29</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(124, 124, 124);</string>
-       </property>
-       <property name="text">
-        <string>Annuler ❌</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_11">
@@ -2001,13 +1953,13 @@ background: white ;
        <rect>
         <x>20</x>
         <y>150</y>
-        <width>311</width>
+        <width>291</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">#frame2{
-border: 3px solid grey ;
+
 border-radius: 20px;
 background: white ;
 }</string>
@@ -2038,9 +1990,9 @@ background: white ;
      <widget class="QLabel" name="label_19">
       <property name="geometry">
        <rect>
-        <x>-10</x>
-        <y>0</y>
-        <width>271</width>
+        <x>-120</x>
+        <y>20</y>
+        <width>371</width>
         <height>121</height>
        </rect>
       </property>
@@ -2048,7 +2000,7 @@ background: white ;
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>:/images/logo.png</pixmap>
+       <pixmap resource="resource.qrc">:/new/prefix1/logo.png</pixmap>
       </property>
      </widget>
      <widget class="QFrame" name="recherche">
@@ -2171,8 +2123,8 @@ background: white ;
      <widget class="QFrame" name="supp">
       <property name="geometry">
        <rect>
-        <x>1050</x>
-        <y>640</y>
+        <x>1060</x>
+        <y>650</y>
         <width>431</width>
         <height>80</height>
        </rect>
@@ -2221,8 +2173,8 @@ border-color: rgb(0, 0, 0);</string>
      <widget class="QFrame" name="pdf">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>640</y>
+        <x>850</x>
+        <y>650</y>
         <width>191</width>
         <height>80</height>
        </rect>
@@ -2264,7 +2216,7 @@ background: white ;
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: red                  ;
+       <string notr="true">background-color: white               ;
 selection-color: rgb(255, 0, 0);
 alternate-background-color: rgb(255, 0, 0);
 color: black
@@ -2311,56 +2263,6 @@ color: black
        </property>
       </column>
      </widget>
-     <widget class="QFrame" name="modif">
-      <property name="geometry">
-       <rect>
-        <x>650</x>
-        <y>640</y>
-        <width>331</width>
-        <height>80</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">#modif{
-	border-color: rgb(85, 170, 0);
-border-radius: 20px;
-background: white ;
-}</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Shape::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Shadow::Raised</enum>
-      </property>
-      <widget class="QPushButton" name="pushButton_105">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>20</y>
-         <width>131</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>modifier ✏️</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_supprimer_2">
-       <property name="geometry">
-        <rect>
-         <x>170</x>
-         <y>20</y>
-         <width>141</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(100, 100, 100);
-border-color: rgb(0, 0, 0);</string>
-       </property>
-      </widget>
-     </widget>
      <widget class="QFrame" name="utilisateur">
       <property name="geometry">
        <rect>
@@ -2397,19 +2299,114 @@ background: white ;
        </property>
       </widget>
      </widget>
-     <widget class="QPushButton" name="btnStats">
+     <widget class="QFrame" name="pdf_6">
       <property name="geometry">
        <rect>
-        <x>1330</x>
-        <y>110</y>
-        <width>151</width>
-        <height>41</height>
+        <x>90</x>
+        <y>640</y>
+        <width>281</width>
+        <height>81</height>
        </rect>
       </property>
-      <property name="text">
-       <string>statistique 📊</string>
+      <property name="styleSheet">
+       <string notr="true">#pdf_6{
+	border-color: rgb(85, 170, 0);
+border-radius: 10px;
+background: white ;
+}</string>
       </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButton_Ajouter">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(124, 124, 124);</string>
+       </property>
+       <property name="text">
+        <string>Ajouter ➕</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_105">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>50</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(124, 124, 124);</string>
+       </property>
+       <property name="text">
+        <string> Modifier ✏️</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Annuler">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>50</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(124, 124, 124);</string>
+       </property>
+       <property name="text">
+        <string>Annuler ❌</string>
+       </property>
+      </widget>
      </widget>
+     <widget class="QFrame" name="pdf_7">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>650</y>
+        <width>191</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pdf_7{
+	border-color: rgb(85, 170, 0);
+border-radius: 20px;
+background: white ;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="btnStats">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>statistique 📊</string>
+       </property>
+      </widget>
+     </widget>
+     <zorder>pdf_6</zorder>
      <zorder>label_19</zorder>
      <zorder>pdf</zorder>
      <zorder>supp</zorder>
@@ -2420,9 +2417,8 @@ background: white ;
      <zorder>calendarWidget</zorder>
      <zorder>frame2</zorder>
      <zorder>tableWidget_Vehicule</zorder>
-     <zorder>modif</zorder>
      <zorder>utilisateur</zorder>
-     <zorder>btnStats</zorder>
+     <zorder>pdf_7</zorder>
     </widget>
     <widget class="QWidget" name="tab2">
      <attribute name="title">
@@ -2431,8 +2427,8 @@ background: white ;
      <widget class="QGroupBox" name="groupBox_6">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>120</y>
+        <x>10</x>
+        <y>180</y>
         <width>371</width>
         <height>551</height>
        </rect>
@@ -2904,14 +2900,15 @@ background-color: rgb(255, 255, 255);</string>
      <widget class="QTableWidget" name="tableWidget_3">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>200</y>
+        <x>400</x>
+        <y>250</y>
         <width>781</width>
-        <height>361</height>
+        <height>381</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 0, 0);</string>
+       <string notr="true">background-color: white;
+color: rgb(0, 0, 0);</string>
       </property>
       <row/>
       <row/>
@@ -2953,8 +2950,8 @@ background-color: rgb(255, 255, 255);</string>
      <widget class="QFrame" name="frame2_2">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>100</y>
+        <x>10</x>
+        <y>150</y>
         <width>301</width>
         <height>51</height>
        </rect>
@@ -2992,8 +2989,8 @@ background: white ;
      <widget class="QFrame" name="recherche_3">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>100</y>
+        <x>400</x>
+        <y>160</y>
         <width>781</width>
         <height>80</height>
        </rect>
@@ -3117,8 +3114,8 @@ background: white ;
      <widget class="QFrame" name="pdf_3">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>590</y>
+        <x>400</x>
+        <y>650</y>
         <width>341</width>
         <height>80</height>
        </rect>
@@ -3189,8 +3186,8 @@ alternate-background-color: rgb(188, 188, 188);
      <widget class="QFrame" name="supp_3">
       <property name="geometry">
        <rect>
-        <x>1050</x>
-        <y>590</y>
+        <x>1070</x>
+        <y>650</y>
         <width>431</width>
         <height>80</height>
        </rect>
@@ -3247,8 +3244,8 @@ border-color: rgb(0, 0, 0);</string>
      <widget class="QGroupBox" name="groupBox_15">
       <property name="geometry">
        <rect>
-        <x>1180</x>
-        <y>200</y>
+        <x>1220</x>
+        <y>240</y>
         <width>301</width>
         <height>361</height>
        </rect>
@@ -3458,22 +3455,6 @@ background: white ;
        </property>
       </widget>
      </widget>
-     <widget class="QLabel" name="label_20">
-      <property name="geometry">
-       <rect>
-        <x>-10</x>
-        <y>0</y>
-        <width>271</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>:/images/logo.png</pixmap>
-      </property>
-     </widget>
      <widget class="QFrame" name="utilisateur_3">
       <property name="geometry">
        <rect>
@@ -3510,7 +3491,23 @@ background: white ;
        </property>
       </widget>
      </widget>
-     <zorder>label_20</zorder>
+     <widget class="QLabel" name="label_53">
+      <property name="geometry">
+       <rect>
+        <x>-110</x>
+        <y>0</y>
+        <width>371</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resource.qrc">:/new/prefix1/logo.png</pixmap>
+      </property>
+     </widget>
+     <zorder>label_53</zorder>
      <zorder>groupBox_6</zorder>
      <zorder>tableWidget_3</zorder>
      <zorder>frame2_2</zorder>
@@ -3907,7 +3904,8 @@ color: rgb(0, 0, 0);
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 0, 0);</string>
+       <string notr="true">background-color: white;
+color: rgb(0, 0, 0);</string>
       </property>
       <row/>
       <row/>
@@ -4250,22 +4248,6 @@ background: white ;
        </item>
       </widget>
      </widget>
-     <widget class="QLabel" name="label_21">
-      <property name="geometry">
-       <rect>
-        <x>-20</x>
-        <y>0</y>
-        <width>271</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>:/images/logo.png</pixmap>
-      </property>
-     </widget>
      <widget class="QFrame" name="menu3">
       <property name="geometry">
        <rect>
@@ -4523,7 +4505,23 @@ background: white ;
        </property>
       </widget>
      </widget>
-     <zorder>label_21</zorder>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>-120</x>
+        <y>20</y>
+        <width>371</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resource.qrc">:/new/prefix1/logo.png</pixmap>
+      </property>
+     </widget>
+     <zorder>label_20</zorder>
      <zorder>frame4</zorder>
      <zorder>tableWidget_11</zorder>
      <zorder>pdf_2</zorder>
@@ -4542,7 +4540,7 @@ background: white ;
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>160</y>
+        <y>190</y>
         <width>371</width>
         <height>531</height>
        </rect>
@@ -4872,13 +4870,14 @@ background-color: rgb(255, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>390</x>
-        <y>210</y>
+        <y>240</y>
         <width>751</width>
         <height>391</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 0, 0);</string>
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
       </property>
       <row/>
       <row/>
@@ -4920,7 +4919,7 @@ background-color: rgb(255, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>130</y>
+        <y>160</y>
         <width>261</width>
         <height>51</height>
        </rect>
@@ -4959,7 +4958,7 @@ background: white ;
       <property name="geometry">
        <rect>
         <x>390</x>
-        <y>610</y>
+        <y>640</y>
         <width>341</width>
         <height>80</height>
        </rect>
@@ -5030,8 +5029,8 @@ alternate-background-color: rgb(188, 188, 188);
      <widget class="QFrame" name="supp_5">
       <property name="geometry">
        <rect>
-        <x>1040</x>
-        <y>610</y>
+        <x>1050</x>
+        <y>640</y>
         <width>431</width>
         <height>80</height>
        </rect>
@@ -5089,7 +5088,7 @@ border-color: rgb(0, 0, 0);</string>
       <property name="geometry">
        <rect>
         <x>390</x>
-        <y>130</y>
+        <y>150</y>
         <width>751</width>
         <height>80</height>
        </rect>
@@ -5213,8 +5212,8 @@ background: white ;
      <widget class="QGroupBox" name="groupBox_17">
       <property name="geometry">
        <rect>
-        <x>1160</x>
-        <y>180</y>
+        <x>1180</x>
+        <y>220</y>
         <width>301</width>
         <height>391</height>
        </rect>
@@ -5241,22 +5240,6 @@ background: white ;
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:72pt;&quot;&gt;📊&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-     </widget>
-     <widget class="QLabel" name="label_22">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>0</y>
-        <width>271</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>:/images/logo.png</pixmap>
-      </property>
      </widget>
      <widget class="QFrame" name="menu4">
       <property name="geometry">
@@ -5476,7 +5459,23 @@ background: white ;
        </property>
       </widget>
      </widget>
-     <zorder>label_22</zorder>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>-120</x>
+        <y>10</y>
+        <width>371</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resource.qrc">:/new/prefix1/logo.png</pixmap>
+      </property>
+     </widget>
+     <zorder>label_21</zorder>
      <zorder>groupBox_12</zorder>
      <zorder>tableWidget_6</zorder>
      <zorder>frame2_4</zorder>
@@ -5491,6 +5490,8 @@ background: white ;
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
